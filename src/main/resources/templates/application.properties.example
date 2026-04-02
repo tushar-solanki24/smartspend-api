@@ -1,0 +1,20 @@
+# Database Connection
+spring.datasource.url=jdbc:postgresql://localhost:5432/smartspend
+spring.datasource.username=postgres
+spring.datasource.password=YOUR_PASSWORD_HERE
+
+# JPA Settings
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Server Port
+server.port=8080
+
+# JWT Config
+jwt.secret=YOUR_JWT_SECRET_HERE
+jwt.expiration=86400000
+
+# Gemini AI Config
+gemini.api.key=YOUR_GEMINI_KEY_HERE
+gemini.api.url=YOUR_GEMINI_URL_HERE
