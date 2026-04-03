@@ -35,13 +35,13 @@ public class GeminiService {
         }
 
         String expenseSummary = expenses.stream()
-                .map(e -> String.format("- %s: $%.2f in category %s on %s",
+                .map(e -> String.format("- %s: ₹%.2f in category %s on %s",
                         e.getDescription(), e.getAmount(), e.getCategory(), e.getDate()))
                 .collect(Collectors.joining("\n"));
 
-        String prompt = "As a financial advisor, analyze the following expenses and provide 3-4 concise, " +
-                "actionable tips to improve my budget and saving habits:\n\n" + expenseSummary;
-
+        String prompt = "As a financial advisor, analyze the following expenses in Indian Rupees (₹) " +
+                "and provide 3-4 concise, actionable tips to improve my budget and saving habits:\n\n"
+                + expenseSummary;
         // Construct the request body for Gemini API
         Map<String, Object> requestBody = Map.of(
                 "contents", List.of(

@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Objects;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+
 @RestController
 @RequestMapping("/api/expenses")
 @RequiredArgsConstructor
+@SecurityRequirement(name = "bearerAuth") // ← add this!
 public class ExpenseController {
 
     private final ExpenseService expenseService;
