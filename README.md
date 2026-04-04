@@ -2,6 +2,12 @@
 
 SmartSpend is a robust Spring Boot REST API designed to help users manage their finances. It features secure JWT-based authentication, comprehensive expense and budget tracking, and leverages Google Gemini AI for intelligent expense analysis.
 
+## Live Demo
+API is live at: https://smartspend-api-production.up.railway.app
+
+### Swagger Documentation
+https://smartspend-api-production.up.railway.app/swagger-ui/index.html
+
 ## Features
 
 - **Secure Authentication:** User registration and login with JWT (JSON Web Tokens) and BCrypt password encryption.
